@@ -63,6 +63,12 @@ public class SlideBottomLayout extends LinearLayout {
      */
     private float hideWeight = 0.25f;
 
+    public void setHideWeight(float hideWeight) {
+        if (hideWeight <= 0 || hideWeight > 1)
+            throw new IllegalArgumentException("hideWeight should belong (0f,1f]");
+        this.hideWeight = hideWeight;
+    }
+
     private Scroller mScroller;
 
     /**
@@ -74,6 +80,10 @@ public class SlideBottomLayout extends LinearLayout {
      * the {@link #childView} Initially visible height
      */
     private float visibilityHeight;
+
+    public void setVisibilityHeight(float visibilityHeight) {
+        this.visibilityHeight = visibilityHeight;
+    }
 
     public SlideBottomLayout(@NonNull Context context) {
         super(context);
