@@ -21,7 +21,7 @@ allprojects {
 ### 2.Add code into your Module Build.gradle:
 ```
 dependencies {
-     compile 'com.github.qingmei2:SlideBottomLayout-Android:1.1'
+     compile 'com.github.qingmei2:SlideBottomLayout-Android:v1.0'
 }
 ```
 ### 3.Add view in your layout:
